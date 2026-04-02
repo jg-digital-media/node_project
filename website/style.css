@@ -1,0 +1,682 @@
+/*****
+
+Last updated: 02-04-2026 - 13:58
+
+*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* config.scss */
+/* main.scss */
+body {
+  background: #696969;
+  font-family: arial;
+  color: #ffffff;
+}
+body nav,
+body header {
+  background: #696969;
+}
+body header {
+  background: #313131;
+  color: #ffffff;
+  text-align: center;
+  /* height: 84px; */
+  padding: 15px 0;
+}
+body header p #powered-node {
+  height: auto;
+  background: #565656;
+  vertical-align: bottom;
+  border-radius: 11px;
+  height: 51px;
+}
+body header h1 .version {
+  color: gold;
+  color: #38cb20;
+  font-size: 12px;
+  vertical-align: baseline;
+}
+body nav {
+  text-align: center;
+  padding: 6px 0;
+  border-bottom: solid white 1px;
+  background: #313131;
+}
+body nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: 0 15px;
+}
+@media screen and (max-width: 620px) {
+  body nav ul li {
+    /* display: block; */
+    padding: 0px 3px;
+    margin: 0 5px;
+    font-size: 12px;
+  }
+}
+body nav ul li a {
+  color: white;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+body nav ul li a:hover {
+  color: gold;
+  color: #03c023;
+}
+body section.welcome {
+  text-align: center;
+  height: auto;
+}
+body section.welcome h2 {
+  text-align: center;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 22pt;
+}
+@media (max-width: 480px) {
+  body section.welcome h2 {
+    font-size: 16pt;
+  }
+}
+body #goto_repo {
+  color: #b5f37e;
+  color: #b5f37e;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+body #goto_repo:hover {
+  color: #7fea21;
+}
+body section.app---description {
+  background: none;
+}
+body section.app---description article {
+  width: 280px;
+}
+body section.app---description article p:first-child {
+  /* color: yellow; */
+  /* color: #b5f37e; */
+  color: #b5f37e;
+}
+body section.app---description article p {
+  line-height: 3;
+}
+body section.app---description article p:last-child {
+  line-height: 1;
+}
+body section.why---and---who {
+  display: flex;
+  flex-direction: row;
+  /* width: 920px; */
+  /* width: 680px; */
+  width: 734px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 768px) {
+  body section.why---and---who {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+body section.why---and---who article div {
+  /* background: #606060; */
+  background: #606060;
+  padding: 9px;
+  font-size: 16px;
+  transition: background 0.3s;
+  /* &:hover {
+
+      background: $article---bg--primary-hover;
+  } */
+}
+body section.why---and---who article div h3 {
+  display: inline-block;
+  border-bottom: solid #b5f37e 4px;
+  /* color: #0ada0a; */
+  color: #b5f37e;
+  margin: 6px 0 23px 0;
+  font-size: 17pt;
+}
+body section.why---and---who article div .npm---install {
+  color: #63ef37;
+  text-align: center;
+}
+body section.why---and---who article div div.app---buttons {
+  text-align: center;
+}
+body section.why---and---who article div div.app---buttons:contains("node.js") {
+  color: red;
+}
+body section.why---and---who article div div.app---buttons strong.highlight_nodejs {
+  /* color: red; */
+  /* color: #629E58; */
+  color: #38cb20;
+  /* font-weight: normal; */
+}
+body section.why---and---who article div div.app---buttons a {
+  display: inline-block;
+  margin: 2px 0;
+  padding: 2px;
+  width: 80px;
+  min-width: 100px;
+  border-radius: 6px;
+  /* background: #8d8c8c; */
+  font-size: 12px;
+  border: solid #025802 2px;
+  background: #6bcb16;
+  color: #1a3f0c;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  text-align: center;
+}
+body section.why---and---who article div div.app---buttons a:hover {
+  background: #02b717;
+}
+body section.why---and---who article div div.app---buttons span#command_copied {
+  font-size: 12px;
+  color: #41fc20;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+body section.why---and---who article div p:first-child {
+  margin-top: 8px;
+}
+body section.why---and---who article div h2 {
+  font-size: 16pt;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+body section {
+  /* background: $section---bg--primary; */
+}
+body section article {
+  /* background: wheat; */
+  /* width: 45%; */
+  /* width: 290px; */
+  /* width: 320px; */
+  width: 49%;
+  margin: 20px auto;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  line-height: 2;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  body section article {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+body section article #all_from {
+  font-size: 16pt;
+  line-height: 1;
+  text-align: center;
+  margin: 16pt auto;
+}
+body section article h3 {
+  color: #65ff65;
+}
+body section.page---title {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
+body section.section---devnotes--setup h3 {
+  /* color: #9f0808; */
+  /* color: #a9ff95; */
+  /* color: #02af02; */
+  color: #65ff65;
+}
+body section.section---setup--one {
+  /* background: #5e5c5c; */
+  /* background: $article---bg--primary; */
+  background: #5e5c5c;
+}
+body section.section---setup--one ul {
+  display: block;
+  line-height: 1.3;
+  margin: 0 auto;
+  width: 50%;
+  color: #ffffff;
+}
+@media (max-width: 860px) {
+  body section.section---setup--one ul {
+    width: 65%;
+  }
+}
+@media (max-width: 620px) {
+  body section.section---setup--one ul {
+    width: 100%;
+  }
+}
+body section.section---setup--one ul strong {
+  /* color: #02af02; */
+  /* color: #02af02; */
+  color: #00e700;
+}
+body section.section---setup--one ul code {
+  color: lightgreen;
+}
+body section.section---setup--one ul li {
+  /* line-height: 3; */
+  padding: 50px;
+  list-style: none;
+}
+body section.section---setup--one ul li a {
+  color: #b5f37e;
+  transition: color 0.3s;
+}
+body section.section---setup--one ul li a:hover {
+  color: #03c023;
+}
+body section.section---setup--one pre {
+  /* width: 39%; */
+  /* width: 550px; */
+  margin: 10px auto;
+  /* background: #505050; */
+}
+@media (max-width: 768px) {
+  body section.section---setup--one pre {
+    /* width: 85%; */
+  }
+}
+body section.section---setup--one pre code {
+  text-shadow: black 0 1px;
+}
+body section.section---setup--one div {
+  margin: 0 auto;
+  /* width: 50%; */
+  padding: 50px 0;
+  color: white;
+}
+@media (max-width: 768px) {
+  body section.section---setup--one div {
+    /* width: 85%; */
+  }
+}
+body section.section---setup--one div p {
+  color: white;
+}
+body section.section---setup--one div p, body section.section---setup--one div aside {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  body section.section---setup--one div p, body section.section---setup--one div aside {
+    width: 85%;
+  }
+}
+body section.section---devnotes--commands {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--commands {
+    flex-direction: column;
+  }
+}
+body section.section---devnotes--commands article {
+  width: 43%;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--commands article {
+    width: 90%;
+  }
+}
+body section.section---devnotes--commands article h3 {
+  display: inline-block;
+  border-bottom: solid #1ad51a 4px;
+  color: white;
+  padding: 0 15px;
+  margin-bottom: 25px;
+}
+body section.section---devnotes--commands article div ul li {
+  text-align: left;
+  padding: 9px 0;
+  list-style: none;
+}
+body section.section---devnotes--commands article div ul li code,
+body section.section---devnotes--commands article div ul li code.command-line-code {
+  padding: 3px;
+  border-radius: 6px;
+}
+body section.section---devnotes--commands article div ul li code.command-line-code {
+  /* background: #fa6ce5; */
+  background: #1ad51a;
+  /* color: green; */
+  color: #0a400a;
+  font-weight: bold;
+  border: solid #0a400a 1px;
+  padding: 2px 4px;
+}
+body section.section---devnotes--code {
+  content: "code";
+}
+body section.section---devnotes--code .code-snippet {
+  width: 90%;
+  margin: 0 auto;
+}
+body section.section---devnotes--code .code---block--container {
+  display: flex;
+  flex-direction: row;
+  /* width: auto; */
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--code .code---block--container {
+    flex-direction: column-reverse;
+  }
+}
+body section.section---devnotes--code .code---block--container .code-block,
+body section.section---devnotes--code .code---block--container .code-block-description {
+  width: auto;
+}
+body section.section---devnotes--code .code---block--container .code-block {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--code .code---block--container .code-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+body section.section---devnotes--code .code---block--container .code-block .code-block__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+  border-radius: 7px 7px 0 0;
+}
+body section.section---devnotes--code .code---block--container .code-block .code-block__header h4 {
+  font-size: 12pt;
+  padding: 0 10px;
+}
+body section.section---devnotes--code .code---block--container .code-block .code-block__header .code-block__copy {
+  color: yellow;
+  font-size: 12px;
+  margin: 0 17px;
+  padding: 3px 0;
+  width: 80px;
+}
+body section.section---devnotes--code .code---block--container .code-block .code-block__code {
+  width: 100%;
+  margin: 0;
+}
+body section.section---devnotes--code .code---block--container .code-block .code-block__code pre {
+  /* margin: 0; */
+  /* background: gray */
+}
+body section.section---devnotes--code .code---block--container .code-block-description {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--code .code---block--container .code-block-description {
+    margin: 0 auto;
+  }
+}
+body section.section---devnotes--code .code---block--container .code-block-description p {
+  /* background: #646464; */
+  background: #606060;
+  box-shadow: #585858 0 0 3px 1px;
+  border-radius: 9px;
+  padding: 3px;
+  width: 370px;
+  min-width: 200px;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+body section.section---devnotes--code .code---block--container .code-block-description p:hover {
+  background: #686868;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--code .code---block--container .code-block-description p {
+    width: 90%;
+  }
+}
+body section.section---dev--buildlog {
+  display: flex;
+  flex-direction: row;
+}
+body section.section---dev--buildlog article {
+  width: 43%;
+}
+@media (max-width: 768px) {
+  body section.section---dev--buildlog article {
+    width: 90%;
+  }
+}
+body section.section---dev--buildlog article h3 {
+  display: inline-block;
+  border-bottom: solid #1ad51a 4px;
+  color: white;
+}
+body section.section---dev--buildlog article div ul li {
+  text-align: left;
+  padding: 14px 7px;
+  border-radius: 6px;
+  list-style: none;
+  transition: background 0.3s;
+}
+body section.section---dev--buildlog article div ul li:hover {
+  background: #7a7a7a;
+}
+body section.section---dev--buildlog article div ul li .command-line-code {
+  display: inline-block;
+  color: #0a400a;
+  background: #1ad51a;
+  padding: 2px 4px;
+  border: solid #0a400a 1px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 12px;
+}
+body section.section---dev--buildlog article div ul li ul li {
+  margin: 0 20px;
+  padding: 4px 0;
+  list-style: disc;
+}
+body footer {
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+body footer p a {
+  color: #f5dd59;
+  transition: color 0.4s;
+}
+body footer p a:hover {
+  color: #d9f506;
+}
+
+/* PrismJS 1.29.0 */
+/* prism/main.scss */
+/* body section.section---dev--code .code-snippet .code---block--container .code-block__code {
+
+
+    background: red;
+
+} */
+body section.section---setup--one pre[class*=language-],
+body section.section---devnotes--code pre[class*=language-],
+body section.section---devnotes--commands pre[class*=language-] {
+  padding: 1em;
+  margin: 0;
+  overflow: auto;
+  /* border-radius: 0.3em; */
+  border-radius: 0;
+  background: #505050;
+  transition: background 0.3s;
+}
+body section.section---setup--one pre[class*=language-]:hover,
+body section.section---devnotes--code pre[class*=language-]:hover,
+body section.section---devnotes--commands pre[class*=language-]:hover {
+  background: #636262;
+}
+body section.section---setup--one pre[class*=language-] code,
+body section.section---devnotes--code pre[class*=language-] code,
+body section.section---devnotes--commands pre[class*=language-] code {
+  text-shadow: black 0 1px;
+}
+body section.section---setup--one pre[class*=language-] .token.operator,
+body section.section---devnotes--code pre[class*=language-] .token.operator,
+body section.section---devnotes--commands pre[class*=language-] .token.operator {
+  background: none;
+}
+body section.section---setup--one pre[class*=language-] .language-json .token.operator,
+body section.section---devnotes--code pre[class*=language-] .language-json .token.operator,
+body section.section---devnotes--commands pre[class*=language-] .language-json .token.operator {
+  background: none;
+  color: white;
+}
+body section.section---setup--one pre[class*=language-] .language-json .token.punctuation,
+body section.section---devnotes--code pre[class*=language-] .language-json .token.punctuation,
+body section.section---devnotes--commands pre[class*=language-] .language-json .token.punctuation {
+  color: white;
+}
+body section.section---setup--one pre[class*=language-] .language-json .token.property,
+body section.section---devnotes--code pre[class*=language-] .language-json .token.property,
+body section.section---devnotes--commands pre[class*=language-] .language-json .token.property {
+  /* color: red; */
+  color: #f56969;
+}
+body section.section---setup--one pre[class*=language-] .language-javascript,
+body section.section---devnotes--code pre[class*=language-] .language-javascript,
+body section.section---devnotes--commands pre[class*=language-] .language-javascript {
+  content: "javascript";
+  color: #a9a7a7;
+  /* text-shadow: none; */
+}
+body section.section---setup--one pre[class*=language-] .language-javascript .token.comment,
+body section.section---devnotes--code pre[class*=language-] .language-javascript .token.comment,
+body section.section---devnotes--commands pre[class*=language-] .language-javascript .token.comment {
+  color: #02bc02;
+}
+body section.section---setup--one pre[class*=language-] .language-javascript .token.keyword,
+body section.section---devnotes--code pre[class*=language-] .language-javascript .token.keyword,
+body section.section---devnotes--commands pre[class*=language-] .language-javascript .token.keyword {
+  color: #33c2ff;
+}
+body section.section---setup--one pre[class*=language-] .language-javascript .number,
+body section.section---devnotes--code pre[class*=language-] .language-javascript .number,
+body section.section---devnotes--commands pre[class*=language-] .language-javascript .number {
+  color: #ff59b5;
+}
+body section.section---setup--one pre[class*=language-] .language-bash .function,
+body section.section---devnotes--code pre[class*=language-] .language-bash .function,
+body section.section---devnotes--commands pre[class*=language-] .language-bash .function {
+  color: #dd4a68;
+}
+body section.section---setup--one pre[class*=language-] .language-html,
+body section.section---devnotes--code pre[class*=language-] .language-html,
+body section.section---devnotes--commands pre[class*=language-] .language-html {
+  content: "html";
+}
+body section.section---setup--one pre[class*=language-] .language-text,
+body section.section---devnotes--code pre[class*=language-] .language-text,
+body section.section---devnotes--commands pre[class*=language-] .language-text {
+  /* color: gray; */
+  color: #c1ffb7;
+}
+body section.section---setup--one pre[class*=language-] .language-text code.language-text,
+body section.section---devnotes--code pre[class*=language-] .language-text code.language-text,
+body section.section---devnotes--commands pre[class*=language-] .language-text code.language-text {
+  color: lightgreen;
+}
+
+body section.section---setup--one div.code-block__caption {
+  padding: 0px 0px;
+  font-size: 10px;
+  color: #ffff00;
+  margin-bottom: 20pt;
+  text-align: center;
+}
+
+body section.section---setup--one .code-block__header {
+  font-size: 12px;
+  /* padding: 4px 0; */
+  padding: 10px;
+  margin-top: 10pt;
+  /* padding-top: 3px; */
+  border-radius: 7px 7px 0 0;
+}
+body section.section---setup--one .code-block__header .code-block__title {
+  font-size: 14px;
+}
+body section.section---setup--one .code-block__header .code-block__copy {
+  padding: 3px 0;
+  color: gold;
+  font-size: 10px;
+}
+
+/* body section.section---devnotes--code pre[class*="language-"] { */
+/* border-radius: 0; */
+/* } */
+body section.section---devnotes--commands {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--commands {
+    flex-direction: column;
+  }
+}
+body section.section---devnotes--commands article {
+  margin: 10px auto;
+  width: 43%;
+}
+@media (max-width: 768px) {
+  body section.section---devnotes--commands article {
+    width: 80%;
+  }
+}
+
+body section.section---devnotes--commands .code-block__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 18px;
+  /* align-content: space-around; */
+  vertical-align: bottom;
+  align-items: center;
+  /* padding: 4px; */
+}
+body section.section---devnotes--commands .code-block__header h4 {
+  display: inline-block;
+}
+body section.section---devnotes--commands .code-block__header a {
+  width: 100px;
+  display: inline-block;
+}
+
+body section.section---devnotes--commands .code-block__caption {
+  color: #ffff00;
+  /* margin-bottom: 20pt; */
+  text-align: center;
+  border-radius: 0;
+}
+
+body section.section---devnotes--commands .code-block__copy {
+  color: orange;
+  color: #ffff00;
+  font-size: 12px;
+}
+
+body section.section---devnotes--commands div.code-block__caption {
+  padding: 0px 0px;
+  font-size: 12px;
+  color: #ffff00;
+  margin-bottom: 20pt;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

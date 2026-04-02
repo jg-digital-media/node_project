@@ -1,0 +1,26 @@
+{
+  "name": "devnote-cli",
+  "version": "1.0.0",
+  "description": "A simple developer-focused notes tool you run in your terminal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jg-digital-media/projects"
+  },
+  "keywords": [
+    "commandline",
+    "devnotes",
+    "notes",
+    "cli",
+    "lists",
+    "tasks"
+  ],
+  "bin": {
+    "devnotes": "./index.js"
+  },
+  "author": "jg@digitalMedia",
+  "license": "MIT"
+}

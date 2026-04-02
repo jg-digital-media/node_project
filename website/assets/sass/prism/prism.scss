@@ -1,0 +1,230 @@
+/* PrismJS 1.29.0 */
+
+/* prism/main.scss */
+
+
+// prism.js highlighter code blocks
+
+
+
+/* body section.section---dev--code .code-snippet .code---block--container .code-block__code {
+   
+
+    background: red;
+
+} */
+
+body section.section---setup--one pre[class*="language-"],
+body section.section---devnotes--code pre[class*="language-"],
+body section.section---devnotes--commands pre[class*="language-"] {
+
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+    /* border-radius: 0.3em; */
+    border-radius: 0;
+    background: #505050;
+
+    transition: background .3s;
+
+    &:hover {
+
+        background: #636262;
+    }
+
+    code {
+
+        text-shadow: black 0 1px;
+    }
+
+    .token.operator {
+
+        background: none;
+
+    }
+
+    .language-json {
+
+        .token.operator {
+
+            background: none;
+            color: white;
+
+        }
+
+        .token.punctuation {
+
+            color: white;
+        }
+
+        .token.property {
+
+            /* color: red; */
+            color: #f56969;
+        }
+    }
+
+    .language-javascript {
+
+        content: "javascript";
+        color: #a9a7a7;
+        /* text-shadow: none; */
+
+        .token.comment {
+
+            color: #02bc02
+        }     
+
+        .token.keyword {
+
+            color: #33c2ff;
+        }
+
+        .number {
+
+            color: #ff59b5;
+        }
+    }
+
+    .language-bash {
+
+        .function {
+
+            color: #dd4a68;
+        }
+    }
+
+    .language-html {
+
+        content: "html"
+    }
+
+    .language-text {
+
+        /* color: gray; */
+        color: #c1ffb7;
+
+        code.language-text {
+
+            color: lightgreen;
+        }
+        
+    }
+
+}
+
+// devnotes - prism - setup page
+body section.section---setup--one div.code-block__caption {
+
+    padding: 0px 0px;
+    font-size: 10px;
+    color: #ffff00;
+    margin-bottom: 20pt;
+    text-align: center;
+}
+
+// devnotes - prism - setup page
+body section.section---setup--one .code-block__header {
+
+    font-size: 12px;
+    /* padding: 4px 0; */
+    padding: 10px;
+    margin-top: 10pt;
+    /* padding-top: 3px; */
+    border-radius: 7px 7px 0 0;
+
+    .code-block__title {
+
+        font-size: 14px;
+    }   
+
+    .code-block__copy {
+
+        padding: 3px 0;
+        color: gold;
+        font-size: 10px;
+    }
+}
+
+// devnotes - prism - code page
+/* body section.section---devnotes--code pre[class*="language-"] { */
+
+    /* border-radius: 0; */
+/* } */
+
+
+// devnotes - prism - commands page
+
+body section.section---devnotes--commands {
+
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $breakpoint---md) {
+
+        flex-direction: column;
+    }
+
+    article {
+
+        margin: 10px auto;
+        width: 43%;
+
+        @media (max-width: $breakpoint---md) {
+
+            width: 80%;
+        }
+        
+    }
+    
+}
+
+body section.section---devnotes--commands .code-block__header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 18px;
+    /* align-content: space-around; */
+    vertical-align: bottom;
+    align-items: center;
+    /* padding: 4px; */
+
+    h4 {
+    
+        display: inline-block;
+    }
+
+    a {
+
+        width: 100px;
+        display: inline-block;
+    }
+}
+ 
+
+body section.section---devnotes--commands .code-block__caption {
+
+    color: #ffff00;
+    /* margin-bottom: 20pt; */
+    text-align: center;
+
+    border-radius: 0;
+
+} 
+
+body section.section---devnotes--commands .code-block__copy {
+
+    color: orange;
+    color: #ffff00;
+    font-size: 12px;
+   
+}
+
+body section.section---devnotes--commands div.code-block__caption {
+
+    padding: 0px 0px;
+    font-size: 12px;
+    color: #ffff00;
+    margin-bottom: 20pt;
+    text-align: center;
+}
