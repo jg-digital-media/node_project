@@ -1,6 +1,6 @@
 
 
-# CLI Tool + Companion Website - `02-04-2026 - 16:07`
+# CLI Tool + Companion Website - `02-04-2026 - 17:21`
 
 ## Sections
 
@@ -496,6 +496,10 @@ const filePath = path.join(__dirname, "../notes.json");
 
 ## Notes
 [Back to Top](#)
+
+### Published
+
+Nice. I managed to publish DevNotes CLI to NPM with `npm publish`.  This is done via https://www.npmjs.com with a security key and 2 factor authentication set up.
 
 ### To Build a CLI Tool - DevNotes CLI
 
