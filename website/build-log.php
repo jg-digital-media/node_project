@@ -29,6 +29,14 @@
                         <li>Development began on the companion Front End Website.</li>
                     </ul>
                 </li>
+
+                
+                <li><code class="command-line-code">v1.0.3</code> - <code>02-04-2026</code> - Published front end website to the web and added repository</li>
+                    <ul>
+                        <li>Users can install the project to their own system by coping the npm install command.</li>
+                        <li>Users can view and copy the source code on the website or directly on the GitHub Repository.</li>
+                    </ul>
+                </li>
             </ul>
         </div>
         
