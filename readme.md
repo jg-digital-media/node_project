@@ -1,6 +1,6 @@
 
 
-# CLI Tool + Companion Website - `02-04-2026 - 17:21`
+# CLI Tool + Companion Website - `21-04-2026 - 15:00`
 
 ## Sections
 
@@ -22,6 +22,7 @@
 + `TODO:` Use timestamps or UUIDs for task ID's
 + `TODO:` Turn project into an installable npm CLI tool
 + `TODO:` Or add tags / categories / search functionality
++ `TODO:` Prevent users from adding empty list items
 
 #### Front End Website
 
